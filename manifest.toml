@@ -1,8 +1,8 @@
 packaging_format = 2
 
-id = "my_webapp"
-name = "My Webapp"
-description.en = "Custom Web app with SFTP access to serve static (HTML, CSS, JS) and PHP files"
+id = "nextcloud"
+name = "Nextcloud Permission stub"
+description.en = "Ynh app set up to use Nextcloud's ID for remote instance permission setup."
 description.fr = "Application Web personnalisée avec accès SFTP pour servir des fichiers statiques (HTML, CSS, JS) et PHP"
 
 version = "1.0~ynh21"
@@ -34,11 +34,11 @@ ram.runtime = "50M"
     ask.en = "Do you need a SFTP access?"
     ask.fr = "Avez-vous besoin d'un accès SFTP ?"
     type = "boolean"
-    default = true
+    default = false
 
     [install.password]
     type = "password"
-    optional = true
+    optional = false
     help.en = "Optional, this corresponds to the password for SFTP access, if you enabled it"
     help.fr = "Optionnel, corresponds au mot de passe pour l'accès SFTP, si vous l'avez activé"
 
